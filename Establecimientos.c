@@ -24,7 +24,7 @@ void actualizarMatrizConVentas(tSector *pSector, const char *idEventoBuscado)
 {
     FILE *pfCompras = NULL;
     tCompra compraActual;
-    int i = 0;
+    int fila,butaca,i;
 
     pfCompras = fopen("Compras.bin", "rb");
     if (pfCompras == NULL)
@@ -40,13 +40,13 @@ void actualizarMatrizConVentas(tSector *pSector, const char *idEventoBuscado)
         if (strcmp(compraActual.idEvento, idEventoBuscado) == 0)
         {
 
-            for (int i = 0; i < compraActual.cantEntradas; i++)
+            for ( i = 0; i < compraActual.cantEntradas; i++)
             {
 
                 if (strcmp(compraActual.Entradas[i].estado, "Cancelado") != 0 && compraActual.Entradas[i].sector == pSector->id)
                 {
-                    int fila = compraActual.Entradas[i].fila;
-                    int butaca = compraActual.Entradas[i].butaca;
+                     fila = compraActual.Entradas[i].fila;
+                     butaca = compraActual.Entradas[i].butaca;
                     pSector->ubicaciones[fila][butaca].disponibilidad = OCUPADO;
                 }
             }

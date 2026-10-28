@@ -49,6 +49,11 @@ int AltaEvento()
     }
 
     nuevoEvento.estado = 1;
+    if (strlen(nuevoEvento.id) == 0 || strlen(nuevoEvento.nombre) == 0)
+    {
+        printf("\nError: El ID y el nombre del evento no pueden estar vacios.\n");
+        return ERROR_DATOS_INVALIDOS; // O el código de error que manejen en su TP
+    }
 
     // 3. Abrimos lectura y escritura en simultáneo para hacer UN SOLO recorrido
     pflectura = fopen("Eventos.bin", "rb");
@@ -304,7 +309,7 @@ int gestionarEvento()
         return ERROR_ARCHIVO_LECTURA;
     }
     tEvento eventoActual;
-    char idEvento[9];
+    char idEvento[10];
     int opcion=0;
     int encontrado=0;
 
@@ -498,7 +503,7 @@ float calcularRecaudacion(char *idEvento)
 
 int consultarVentas()
 {
-    char idEvento[9];
+    char idEvento[10];
     int cantVendidas=0;
     int cantCanceladas=0;
     float recaudacionTotalVendidas=0;

@@ -100,3 +100,54 @@
 1793086930 d:\escritorio\topicos2026\tpentradas\tpgruponexo\entradas.h
 	"time.h"
 
+1791558891 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\compras.c
+
+1793087207 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\entradas.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Entradas.h"
+	"Compras.h"
+
+1793165141 d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\eventos.h
+	<stdio.h>
+	"Establecimientos.h"
+
+1793078914 d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\establecimientos.h
+	"TPGrupal.h"
+
+1793072911 d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\tpgrupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1793086930 d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\entradas.h
+	"time.h"
+
+1792510394 d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\compras.h
+	"time.h"
+	"Entradas.h"
+
+1793165954 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\eventos.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793082223 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\main.c
+	"TPGrupal.h"
+	"Eventos.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793082223 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\tpgrupal.c
+	"TPGrupal.h"
+
+1793165022 source:d:\escritorio\41743980_arriola_santiago_tp\tpgruponexo\establecimientos.c
+	"Establecimientos.h"
+	"Eventos.h"
+	"TPGrupal.h"
+	"Compras.h"
+
